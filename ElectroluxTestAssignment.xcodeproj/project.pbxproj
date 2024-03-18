@@ -20,6 +20,7 @@
 		E45F58392BA8822200041796 /* CountryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58382BA8822200041796 /* CountryError.swift */; };
 		E45F583B2BA8850100041796 /* CountriesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */; };
 		E45F583D2BA897E200041796 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583C2BA897E200041796 /* CountryListViewModel.swift */; };
+		E45F583F2BA89A2700041796 /* CountryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583E2BA89A2700041796 /* CountryListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		E45F58382BA8822200041796 /* CountryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryError.swift; sourceTree = "<group>"; };
 		E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSourceTests.swift; sourceTree = "<group>"; };
 		E45F583C2BA897E200041796 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		E45F583E2BA89A2700041796 /* CountryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				E45F580D2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift */,
 				E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */,
+				E45F583E2BA89A2700041796 /* CountryListViewModelTests.swift */,
 			);
 			path = ElectroluxTestAssignmentTests;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			files = (
 				E45F580E2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift in Sources */,
 				E45F583B2BA8850100041796 /* CountriesDataSourceTests.swift in Sources */,
+				E45F583F2BA89A2700041796 /* CountryListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
