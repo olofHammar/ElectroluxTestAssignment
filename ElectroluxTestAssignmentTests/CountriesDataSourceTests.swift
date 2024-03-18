@@ -9,17 +9,17 @@ import Foundation
 import XCTest
 @testable import ElectroluxTestAssignment
 
-class CountriesDataSourceTests: XCTestCase {
+final class CountriesDataSourceTests: XCTestCase {
     
-    private var dataSource: CountryDataSource!
+    private var sut: CountryDataSource!
     
     override func setUp() {
         super.setUp()
-        dataSource = StaticCountryDataSource()
+        sut = StaticCountryDataSource()
     }
     
     override func tearDown() {
-        dataSource = nil
+        sut = nil
         super.tearDown()
     }
     
@@ -27,7 +27,7 @@ class CountriesDataSourceTests: XCTestCase {
         let expectedCountriesCount = 10
         let expectation = expectation(description: "Fetch countries")
         
-        let cancellable = dataSource.fetchCountries()
+        let cancellable = sut.fetchCountries()
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
@@ -50,7 +50,7 @@ class CountriesDataSourceTests: XCTestCase {
     func test_fetch_countries_returns_correct_country_data() throws {
         let expectation = expectation(description: "Fetch countries")
 
-        let cancellable = dataSource.fetchCountries()
+        let cancellable = sut.fetchCountries()
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
@@ -81,7 +81,7 @@ class CountriesDataSourceTests: XCTestCase {
         let expectedCountryName = "Belgium"
         let expectation = expectation(description: "Fetch countries")
 
-        let cancellable = dataSource.fetchCountries()
+        let cancellable = sut.fetchCountries()
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .finished:
