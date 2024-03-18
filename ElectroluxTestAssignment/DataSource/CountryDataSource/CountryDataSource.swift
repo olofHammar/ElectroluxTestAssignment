@@ -8,10 +8,15 @@
 import Combine
 import Foundation
 
+/// `Protocol` defining the interface for a data source responsible for fetching country data.
 protocol CountryDataSource {
+    
+    /// Fetches the list of countries asynchronously.
+    /// - Returns: A publisher of the emits an array of `CountryItem` or a `CountryError`
     func fetchCountries() -> AnyPublisher<[CountryItem], CountryError>
 }
 
+///  A concrete implementation of the `CountryDataSource` protocol that provides static data from a JSON fixture.
 final class StaticCountryDataSource: CountryDataSource {
     
     init() { }
@@ -33,6 +38,9 @@ final class StaticCountryDataSource: CountryDataSource {
         .eraseToAnyPublisher()
     }
     
+    /// Fetches country data from a static JSON fixture.
+    /// - Throws: A `CountryError` if the JSON-file can't be found or if decoding fails.
+    /// - Returns: An array of `CountryItem`.
     private func fetchCountrysJsonFromFixture() throws -> [CountryItem] {
         guard let url = Bundle.main.url(forResource: String.countriesResourceString, withExtension: "json") else {
             throw CountryError.invalidURL
