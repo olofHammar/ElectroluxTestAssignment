@@ -38,6 +38,36 @@ class CountriesDataSourceTests: XCTestCase {
                 }
             }, receiveValue: { countries in
                 XCTAssertEqual(countries.count, expectedCountriesCount)
+                
+                expectation.fulfill()
+            })
+
+        waitForExpectations(timeout: 5, handler: nil)
+
+        cancellable.cancel()
+    }
+    
+    func test_fetch_countries_returns_correct_country_data() throws {
+        let expectation = expectation(description: "Fetch countries")
+
+        let cancellable = dataSource.fetchCountries()
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                    
+                case .failure(let error):
+                    XCTFail("Unexpected failure: \(error)")
+                }
+            }, receiveValue: { countries in
+                for country in countries {
+                    XCTAssertNotNil(country.id)
+                    XCTAssertNotNil(country.name)
+                    XCTAssertNotNil(country.languages)
+                    XCTAssertNotNil(country.currency)
+                    XCTAssertNotNil(country.flagImageString)
+                }
+                
                 expectation.fulfill()
             })
 
