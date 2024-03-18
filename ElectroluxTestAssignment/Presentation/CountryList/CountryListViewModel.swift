@@ -22,6 +22,11 @@ final class CountryListViewModel: ObservableObject {
         self.dataSource = countryDataSource
     }
     
+    deinit {
+        countrySubscription?.cancel()
+        countrySubscription = nil
+    }
+    
     func fetchCountries() {
         countrySubscription = dataSource.fetchCountries()
             .receive(on: RunLoop.main)
