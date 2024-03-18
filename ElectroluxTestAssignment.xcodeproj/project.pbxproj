@@ -94,9 +94,10 @@
 		E45F57FB2BA86E5500041796 /* ElectroluxTestAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				E45F58282BA874B800041796 /* DataSource */,
+				E45F58262BA8742200041796 /* Presentation */,
 				E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */,
 				E45F57FE2BA86E5500041796 /* ContentView.swift */,
-				E45F58002BA86E5600041796 /* Assets.xcassets */,
 				E45F58022BA86E5600041796 /* Preview Content */,
 			);
 			path = ElectroluxTestAssignment;
@@ -125,6 +126,77 @@
 				E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */,
 			);
 			path = ElectroluxTestAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		E45F58262BA8742200041796 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E45F582A2BA874EB00041796 /* CountryDetail */,
+				E45F58292BA874D700041796 /* CountryList */,
+				E45F582B2BA8752400041796 /* Extensions */,
+				E45F58272BA8749300041796 /* Resources */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E45F58272BA8749300041796 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E45F582D2BA8753E00041796 /* Colors */,
+				E45F582C2BA8753500041796 /* Dimensions */,
+				E45F582E2BA8754D00041796 /* Strings */,
+				E45F58002BA86E5600041796 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E45F58282BA874B800041796 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E45F58292BA874D700041796 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		E45F582A2BA874EB00041796 /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
+		E45F582B2BA8752400041796 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E45F582C2BA8753500041796 /* Dimensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dimensions;
+			sourceTree = "<group>";
+		};
+		E45F582D2BA8753E00041796 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		E45F582E2BA8754D00041796 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
