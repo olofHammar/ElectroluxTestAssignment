@@ -75,4 +75,34 @@ class CountriesDataSourceTests: XCTestCase {
 
         cancellable.cancel()
     }
+    
+    func test_fetch_countries_returns_correct_country_name() throws {
+        let belgiumCountryId = "belgium_id"
+        let expectedCountryName = "Belgium"
+        let expectation = expectation(description: "Fetch countries")
+
+        let cancellable = dataSource.fetchCountries()
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                    
+                case .failure(let error):
+                    XCTFail("Unexpected failure: \(error)")
+                }
+            }, receiveValue: { countries in
+                guard let belgiumCountry = countries.first(where: { $0.id == belgiumCountryId }) else {
+                    XCTFail("No country with matching id.")
+                    return
+                }
+                
+                XCTAssertEqual(belgiumCountry.name, expectedCountryName)
+                
+                expectation.fulfill()
+            })
+
+        waitForExpectations(timeout: 5, handler: nil)
+
+        cancellable.cancel()
+    }
 }
