@@ -14,6 +14,11 @@
 		E45F580E2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F580D2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift */; };
 		E45F58182BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */; };
 		E45F581A2BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */; };
+		E45F58312BA87CA400041796 /* CountriesData.json in Resources */ = {isa = PBXBuildFile; fileRef = E45F58302BA87CA400041796 /* CountriesData.json */; };
+		E45F58342BA87CE000041796 /* CountryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58332BA87CE000041796 /* CountryItem.swift */; };
+		E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58362BA8811300041796 /* CountryDataSource.swift */; };
+		E45F58392BA8822200041796 /* CountryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58382BA8822200041796 /* CountryError.swift */; };
+		E45F583B2BA8850100041796 /* CountriesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		E45F58132BA86E5600041796 /* ElectroluxTestAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectroluxTestAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentUITests.swift; sourceTree = "<group>"; };
 		E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E45F58302BA87CA400041796 /* CountriesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesData.json; sourceTree = "<group>"; };
+		E45F58332BA87CE000041796 /* CountryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryItem.swift; sourceTree = "<group>"; };
+		E45F58362BA8811300041796 /* CountryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataSource.swift; sourceTree = "<group>"; };
+		E45F58382BA8822200041796 /* CountryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryError.swift; sourceTree = "<group>"; };
+		E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				E45F580D2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift */,
+				E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */,
 			);
 			path = ElectroluxTestAssignmentTests;
 			sourceTree = "<group>";
@@ -153,6 +164,9 @@
 		E45F58282BA874B800041796 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				E45F58352BA880FF00041796 /* CountryDataSource */,
+				E45F58322BA87CCE00041796 /* Entities */,
+				E45F582F2BA879D200041796 /* CountriesData */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -197,6 +211,31 @@
 			children = (
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		E45F582F2BA879D200041796 /* CountriesData */ = {
+			isa = PBXGroup;
+			children = (
+				E45F58302BA87CA400041796 /* CountriesData.json */,
+			);
+			path = CountriesData;
+			sourceTree = "<group>";
+		};
+		E45F58322BA87CCE00041796 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E45F58332BA87CE000041796 /* CountryItem.swift */,
+				E45F58382BA8822200041796 /* CountryError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E45F58352BA880FF00041796 /* CountryDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E45F58362BA8811300041796 /* CountryDataSource.swift */,
+			);
+			path = CountryDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +344,7 @@
 			files = (
 				E45F58042BA86E5600041796 /* Preview Assets.xcassets in Resources */,
 				E45F58012BA86E5600041796 /* Assets.xcassets in Resources */,
+				E45F58312BA87CA400041796 /* CountriesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +369,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45F58392BA8822200041796 /* CountryError.swift in Sources */,
 				E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */,
+				E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */,
 				E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */,
+				E45F58342BA87CE000041796 /* CountryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45F580E2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift in Sources */,
+				E45F583B2BA8850100041796 /* CountriesDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +607,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58276YCSXY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olofHammar.ElectroluxTestAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,7 +627,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58276YCSXY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olofHammar.ElectroluxTestAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
