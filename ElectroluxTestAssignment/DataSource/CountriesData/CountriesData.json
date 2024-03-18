@@ -1,0 +1,86 @@
+[
+  {
+    "country_name": "Belgium",
+    "country_language": [
+      "Dutch",
+      "French",
+      "German"
+    ],
+    "country_flag_ref": "ic_flag_belgium",
+    "country_currency": "EUR"
+  },
+  {
+    "country_name": "Canada",
+    "country_language": [
+      "English",
+      "French"
+    ],
+    "country_flag_ref": "ic_flag_canada",
+    "country_currency": "CAD"
+  },
+  {
+    "country_name": "Chile",
+    "country_language": [
+      "Spanish"
+    ],
+    "country_flag_ref": "ic_flag_chile",
+    "country_currency": "CLP"
+  },
+  {
+    "country_name": "Czech Republic",
+    "country_language": [
+      "Czech"
+    ],
+    "country_flag_ref": "ic_flag_czech_republic",
+    "country_currency": "CZK"
+  },
+  {
+    "country_name": "Denmark",
+    "country_language": [
+      "Danish"
+    ],
+    "country_flag_ref": "ic_flag_denmark",
+    "country_currency": "DKK"
+  },
+  {
+    "country_name": "Finland",
+    "country_language": [
+      "Finnish",
+      "Swedish"
+    ],
+    "country_flag_ref": "ic_flag_finland",
+    "country_currency": "EUR"
+  },
+  {
+    "country_name": "France",
+    "country_language": [
+      "French"
+    ],
+    "country_flag_ref": "ic_flag_france",
+    "country_currency": "EUR"
+  },
+  {
+    "country_name": "Italy",
+    "country_language": [
+      "Italian"
+    ],
+    "country_flag_ref": "ic_flag_italy",
+    "country_currency": "EUR"
+  },
+  {
+    "country_name": "Norway",
+    "country_language": [
+      "Norwegian"
+    ],
+    "country_flag_ref": "ic_flag_norway",
+    "country_currency": "NOK"
+  },
+  {
+    "country_name": "Sweden",
+    "country_language": [
+      "Swedish"
+    ],
+    "country_flag_ref": "ic_flag_sweden",
+    "country_currency": "SEK"
+  }
+]

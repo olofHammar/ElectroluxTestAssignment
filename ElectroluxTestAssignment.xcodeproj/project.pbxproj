@@ -14,6 +14,7 @@
 		E45F580E2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F580D2BA86E5600041796 /* ElectroluxTestAssignmentTests.swift */; };
 		E45F58182BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */; };
 		E45F581A2BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */; };
+		E45F58312BA87CA400041796 /* CountriesData.json in Resources */ = {isa = PBXBuildFile; fileRef = E45F58302BA87CA400041796 /* CountriesData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E45F58132BA86E5600041796 /* ElectroluxTestAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectroluxTestAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentUITests.swift; sourceTree = "<group>"; };
 		E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E45F58302BA87CA400041796 /* CountriesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		E45F58282BA874B800041796 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				E45F582F2BA879D200041796 /* CountriesData */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -197,6 +200,14 @@
 			children = (
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		E45F582F2BA879D200041796 /* CountriesData */ = {
+			isa = PBXGroup;
+			children = (
+				E45F58302BA87CA400041796 /* CountriesData.json */,
+			);
+			path = CountriesData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 			files = (
 				E45F58042BA86E5600041796 /* Preview Assets.xcassets in Resources */,
 				E45F58012BA86E5600041796 /* Assets.xcassets in Resources */,
+				E45F58312BA87CA400041796 /* CountriesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
