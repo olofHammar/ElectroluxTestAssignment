@@ -15,6 +15,7 @@
 		E45F58182BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */; };
 		E45F581A2BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */; };
 		E45F58312BA87CA400041796 /* CountriesData.json in Resources */ = {isa = PBXBuildFile; fileRef = E45F58302BA87CA400041796 /* CountriesData.json */; };
+		E45F58342BA87CE000041796 /* CountryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58332BA87CE000041796 /* CountryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentUITests.swift; sourceTree = "<group>"; };
 		E45F58192BA86E5600041796 /* ElectroluxTestAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E45F58302BA87CA400041796 /* CountriesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountriesData.json; sourceTree = "<group>"; };
+		E45F58332BA87CE000041796 /* CountryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		E45F58282BA874B800041796 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				E45F58322BA87CCE00041796 /* Entites */,
 				E45F582F2BA879D200041796 /* CountriesData */,
 			);
 			path = DataSource;
@@ -208,6 +211,14 @@
 				E45F58302BA87CA400041796 /* CountriesData.json */,
 			);
 			path = CountriesData;
+			sourceTree = "<group>";
+		};
+		E45F58322BA87CCE00041796 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				E45F58332BA87CE000041796 /* CountryItem.swift */,
+			);
+			path = Entites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 			files = (
 				E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */,
 				E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */,
+				E45F58342BA87CE000041796 /* CountryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
