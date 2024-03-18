@@ -24,13 +24,13 @@ final class CountryListViewModel: ObservableObject {
     
     func fetchCountries() {
         countrySubscription = dataSource.fetchCountries()
-            .subscribe(on: RunLoop.main)
+            .receive(on: RunLoop.main)
             .sink(receiveCompletion: { completion in
                 if case let .failure(error) = completion {
                     print("Error fetching countries: \(error)")
                 }
-            }, receiveValue: { [unowned self] countries in
-                self.countryList = countries
+            }, receiveValue: { [weak self] countries in
+                self?.countryList = countries
             })
     }
 }
