@@ -1,0 +1,8 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdatad/
+/ElectroluxTestAssignment.xcodeproj/project.xcworkspace/xcuserdata
+/ElectroluxTestAssignment.xcodeproj/project.xcworkspace/xcuserdata
