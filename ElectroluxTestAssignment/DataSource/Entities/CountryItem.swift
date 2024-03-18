@@ -11,7 +11,7 @@ import SwiftUI
 /// An `Entity` representing a country item with essential details.
 struct CountryItem: Identifiable, Codable {
     /// A unique identifier for the country item.
-    var id = UUID().uuidString
+    var id: String
     
     /// The name of the country.
     let name: String
@@ -32,11 +32,13 @@ struct CountryItem: Identifiable, Codable {
     ///   - currency: The currency used in the country.
     ///   - languages: The languages spoken in the country.
     init(
+        id: String,
         name: String,
         flagRef: String,
         currency: String,
         languages: [String]
     ) {
+        self.id = id
         self.name = name
         self.flagImageString = flagRef
         self.currency = currency
@@ -44,13 +46,13 @@ struct CountryItem: Identifiable, Codable {
     }
 }
 
-private extension CountryItem {
+extension CountryItem {
     
     /// Enum defining the coding keys for encoding and decoding `CountryItem`.
     enum CodingKeys: String, CodingKey {
         case id
         case name = "country_name"
-        case flagImageString = "ic_flag_belgium"
+        case flagImageString = "country_flag_ref"
         case currency = "country_currency"
         case languages = "country_language"
     }
