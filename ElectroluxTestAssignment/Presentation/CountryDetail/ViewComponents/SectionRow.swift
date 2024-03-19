@@ -60,7 +60,7 @@ struct SectionRow: View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
                 .foregroundStyle(Color.theme.textAccent)
-                .caption2Heavy()
+                .caption2HeavyRounded()
             
             subtitlesContainer
         }
@@ -86,7 +86,7 @@ struct SectionRow: View {
                     Text(index < subtitles.count - 1 ? String.dashWhitespace : String.empty)
                         .foregroundStyle(Color.theme.textPrimary)
                 }
-                .captionHeavy()
+                .captionHeavyRounded()
             }
         }
     }

@@ -26,6 +26,7 @@ struct FlagCardView: View {
         self.namespaceId = namespaceId
         self.onTap = onTap
     }
+    
     var body: some View {
         cardContainer
             .onTapGesture(perform: { onTap?() })
@@ -79,11 +80,11 @@ struct FlagCardView: View {
         VStack(alignment: .leading) {
             Text(String.countryTitle.uppercased())
                 .foregroundStyle(Color.theme.textAccent)
-                .caption2Heavy()
+                .caption2HeavyRounded()
             
             Text(countryName)
                 .foregroundStyle(Color.theme.textPrimary)
-                .bodyHeavy()
+                .bodyHeavySerif()
         }
         .maxWidth(.infinity, alignment: .leading)
         .padding(.leading, .defaultPadding)

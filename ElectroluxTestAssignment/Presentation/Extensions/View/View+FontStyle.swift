@@ -7,42 +7,42 @@
 
 import SwiftUI
 
-/// Extension providing a convenience method for applying an italic heavy title font to a view.
+/// Extension providing convenience methods for applying a specific font style to a view.
 extension View {
     
-    /// Applies an italic heavy title font to the view.
+    /// Applies an italic heavy title font with serif design  to the view.
     /// - Returns: A view with the specified font style.
-    func titleItalicHeavy() -> some View {
+    func titleItalicHeavySerif() -> some View {
         self.font(.system(.title, design: .serif).weight(.heavy).italic())
     }
     
-    /// Applies an heavy title2 font to the view.
+    /// Applies an heavy title2 font with serif design to the view.
     /// - Returns: A view with the specified font style.
-    func title2Heavy() -> some View {
+    func title2HeavySerif() -> some View {
         self.font(.system(.title2, design: .serif).weight(.heavy)).tracking(0.5)
     }
     
-    /// Applies an heavy body font to the view.
+    /// Applies an heavy body font with serif design to the view.
     /// - Returns: A view with the specified font style.
-    func bodyHeavy() -> some View {
+    func bodyHeavySerif() -> some View {
         self.font(.system(.body, design: .serif).weight(.heavy)).tracking(0.5)
     }
     
-    /// Applies an heavy caption font to the view.
+    /// Applies an heavy caption font with rounded design to the view.
     /// - Returns: A view with the specified font style.
-    func captionHeavy() -> some View {
+    func captionHeavyRounded() -> some View {
         self.font(.system(.caption, design: .rounded).weight(.semibold))
     }
     
-    /// Applies an heavy caption2 font to the view.
+    /// Applies an heavy caption2 font with rounded design to the view.
     /// - Returns: A view with the specified font style.
-    func caption2Heavy() -> some View {
+    func caption2HeavyRounded() -> some View {
         self.font(.system(.caption2, design: .rounded).weight(.semibold))
     }
     
-    /// Applies an semibold footnote font to the view.
+    /// Applies an semibold footnote font with rounded design to the view.
     /// - Returns: A view with the specified font style.
-    func footnoteSemiboldItalic() -> some View {
+    func footnoteSemiboldItalicRounded() -> some View {
         self.font(.system(.footnote, design: .rounded).weight(.semibold).italic())
     }
 }

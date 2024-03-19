@@ -70,7 +70,7 @@ struct CountryDetailView: View {
         Button(action: { vm.dismissCountryDetail() }, label: {
             Image(systemName: "xmark")
                 .foregroundColor(Color.theme.textPrimary)
-                .bodyHeavy()
+                .bodyHeavySerif()
                 .padding(.x2)
                 .background(.ultraThinMaterial)
                 .cornerRadius(.x1, corners: [.allCorners])
