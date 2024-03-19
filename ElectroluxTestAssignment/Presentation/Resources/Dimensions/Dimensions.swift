@@ -11,8 +11,29 @@ import Foundation
 extension CGFloat {
     
     /// The default padding value used in layouts.
-    static let defaultPadding: CGFloat = 16
+    static var defaultPadding: CGFloat { .x2 }
+    
+    /// The default large padding value used in layouts.
+    static var defaultLargeContentPadding: CGFloat { .x4 }
+    
+    /// The default corner radius value used in layouts.
+    static var defaultCornerRadius: CGFloat { .x2 }
     
     /// The default height for flag images.
-    static let defaultFlagHeight: CGFloat = 240
+    static let defaultFlagImageHeight: CGFloat = 140
+    
+    /// The default height for icon images.
+    static let defaultIconHeight: CGFloat = 36
+    
+    /// The base value for multiplication.
+    static var x1: CGFloat = 8
+    
+    /// The result of multiplying `x1` by 2.
+    static var x2: CGFloat = x1 * 2
+    
+    /// The result of multiplying `x1` by 3.
+    static var x3: CGFloat = x1 * 3
+    
+    /// The result of multiplying `x1` by 4.
+    static var x4: CGFloat = x1 * 4
 }

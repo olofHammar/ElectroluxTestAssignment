@@ -11,7 +11,7 @@ import Foundation
 final class RootViewModel: ObservableObject {
     
     @Published private(set) var countryList: [CountryItem] = []
-    
+        
     private let dataSource: CountryDataSource
     
     private var countrySubscription: AnyCancellable?

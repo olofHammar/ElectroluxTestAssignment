@@ -29,24 +29,63 @@ struct FlagCardView: View {
     }
     
     private var cardContainer: some View {
-        VStack(alignment: .leading, spacing: 0) {
+        VStack(spacing: 4) {
             imageContainer
             
-            titleContainer
+            bottomRowContainer
         }
+        .defaultBorderShadow()
     }
     
     private var imageContainer: some View {
         Image(String.flagFolderRef + imageString)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .height(.defaultFlagHeight)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .height(.defaultFlagImageHeight)
+            .shadow(color: .black.opacity(0.5), radius: .x1, x: 0, y: .x1)
+            .maxWidth(.infinity)
+            .padding(.vertical, .defaultLargeContentPadding)
+            .background(Color.theme.background200)
+            .cornerRadius(.defaultCornerRadius, corners: [.topLeft, .topRight])
     }
     
-    private var titleContainer: some View {
-        Text(countryName)
-            .foregroundStyle(Color.theme.textPrimary)
-            .font(.system(.title, design: .serif).weight(.heavy).italic())
+    private var bottomRowContainer: some View {
+        HStack(spacing: 4) {
+            iconContainer
+            
+            countryTextContainer
+        }
+    }
+    
+    private var iconContainer: some View {
+        Image(systemName: "globe.desk")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .height(.defaultIconHeight)
+            .fontWeight(.semibold)
+            .foregroundStyle(Color.theme.background300.shadow(.drop(radius: 2)))
+            .padding(.horizontal, .defaultPadding)
+            .padding(.vertical, .defaultPadding)
+            .background(Color.theme.background200)
+            .cornerRadius(.defaultCornerRadius, corners: [.bottomLeft])
+    }
+    
+    private var countryTextContainer: some View {
+        VStack(alignment: .leading) {
+            Text(String.countryTitle.uppercased())
+                .foregroundStyle(Color.theme.textAccent)
+                .font(.system(.caption2, design: .serif).weight(.heavy))
+            
+            Text(countryName)
+                .foregroundStyle(Color.theme.textPrimary)
+                .font(.system(.body, design: .serif).weight(.heavy))
+        }
+        .maxWidth(.infinity, alignment: .leading)
+        .padding(.leading, .defaultPadding)
+        .padding(.vertical, .defaultPadding)
+        .background(Color.theme.background200)
+        .cornerRadius(.defaultCornerRadius, corners: [.bottomRight])
     }
 }
 
@@ -58,7 +97,9 @@ struct FlagCardView_Previews: PreviewProvider {
             country: .demoCountry,
             namespaceId: animation
         )
+        .padding(.horizontal, .defaultPadding)
         .maxHeight(.infinity)
+        .maxWidth(.infinity)
         .background(Color.theme.background100)
     }
 }
@@ -66,3 +107,4 @@ struct FlagCardView_Previews: PreviewProvider {
 fileprivate extension String {
     static let flagFolderRef: String = "Flags/"
 }
+

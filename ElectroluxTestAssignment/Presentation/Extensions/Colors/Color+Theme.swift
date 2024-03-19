@@ -23,8 +23,11 @@ struct ColorTheme {
     /// The color for background with medium shade.
     let background200: Color
     
-    /// The color for background with lightest shade.
+    /// The color for background with second lightest shade.
     let background300: Color
+    
+    /// The color for background with lightest shade.
+    let background400: Color
     
     /// The primary text color.
     let textPrimary: Color
@@ -40,6 +43,7 @@ struct ColorTheme {
         self.background100 = Color("Colors/Background/B100")
         self.background200 = Color("Colors/Background/B200")
         self.background300 = Color("Colors/Background/B300")
+        self.background400 = Color("Colors/Background/B400")
         self.textPrimary = Color("Colors/Text/Primary")
         self.textSecondary = Color("Colors/Text/Secondary")
         self.textAccent = Color("Colors/Text/Accent")
