@@ -7,7 +7,12 @@
 
 import Foundation
 
+/// Extension providing default CGFloat values commonly used in layouts.
 extension CGFloat {
+    
+    /// The default padding value used in layouts.
     static let defaultPadding: CGFloat = 16
-    static let defaultCardHeight: CGFloat = 240
+    
+    /// The default height for flag images.
+    static let defaultFlagHeight: CGFloat = 240
 }
