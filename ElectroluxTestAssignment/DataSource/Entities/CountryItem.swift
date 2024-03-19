@@ -10,6 +10,7 @@ import SwiftUI
 
 /// An `Entity` representing a country item with essential details.
 struct CountryItem: Identifiable, Codable {
+    
     /// A unique identifier for the country item.
     var id: String
     
@@ -56,4 +57,20 @@ extension CountryItem {
         case currency = "country_currency"
         case languages = "country_language"
     }
+}
+
+/// Extension providing a static property representing a demo `CountryItem`.
+extension CountryItem {
+    
+    /// A demo `CountryItem` instance representing Canada.
+    static let demoCountry: CountryItem = .init(
+        id: "canada_id",
+        name: "Canada",
+        flagRef: "ic_flag_canada",
+        currency: "CAD",
+        languages: [
+            "English",
+            "French"
+        ]
+    )
 }

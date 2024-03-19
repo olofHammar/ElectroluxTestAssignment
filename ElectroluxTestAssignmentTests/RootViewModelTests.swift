@@ -1,5 +1,5 @@
 //
-//  CountryListViewModelTests.swift
+//  RootViewModelTests.swift
 //  ElectroluxTestAssignmentTests
 //
 //  Created by Olof Hammar on 2024-03-18.
@@ -9,14 +9,14 @@ import Foundation
 import XCTest
 @testable import ElectroluxTestAssignment
 
-final class CountryListViewModelTests: XCTestCase {
-    var sut: CountryListViewModel!
+final class RootViewModelTests: XCTestCase {
+    var sut: RootViewModel!
     var dataSource: CountryDataSource!
     
     override func setUp() {
         super.setUp()
         dataSource = StaticCountryDataSource()
-        sut = CountryListViewModel(countryDataSource: dataSource)
+        sut = RootViewModel(countryDataSource: dataSource)
     }
     
     override func tearDown() {
