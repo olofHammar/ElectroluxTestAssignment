@@ -10,6 +10,8 @@ import SwiftUI
 
 final class CountryDetailViewModel: ObservableObject {
         
+    @Published private(set) var isAnimatingOnAppear: Bool = false
+    
     let country: CountryItem
     let namespaceId: Namespace.ID
 
@@ -25,7 +27,13 @@ final class CountryDetailViewModel: ObservableObject {
         self.onTapClose = onTapClose
     }
     
+    func animateOnAppear() {
+        withAnimation(.easeIn(duration: 0.5)) {
+            isAnimatingOnAppear = true 
+        }
+    }
+    
     func dismissCountryDetail() {
-        onTapClose?()
+        self.onTapClose?()
     }
 }

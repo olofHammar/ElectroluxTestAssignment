@@ -20,8 +20,15 @@ struct RootView: View {
     }
     
     var body: some View {
+        viewsContainer
+            .maxWidth(.infinity)
+            .background(Color.theme.background100)
+    }
+    
+    private var viewsContainer: some View {
         ZStack(alignment: .topLeading) {
             CountryHeaderView()
+                .ignoresSafeArea(edges: .top)
                 .opacity(vm.didDismissHeaderView ? 0 : 1)
                 .zIndex(1)
             
@@ -30,9 +37,6 @@ struct RootView: View {
             
             selectedDetailContainer
         }
-        .ignoresSafeArea(edges: .top)
-        .maxWidth(.infinity)
-        .background(Color.theme.background100)
     }
     
     private var listContainer: some View {
@@ -45,11 +49,12 @@ struct RootView: View {
                         onTap: { vm.presentSelectedCountryDetail(for: country) }
                     )
                     .opacity(vm.opacityForFlagCard(country))
+                    .allowsHitTesting(vm.selectedCountry == nil)
                 }
             }
             .padding(.vertical, .defaultScrollTopPadding)
             .padding(.bottom, .defaultScrollBottomPadding)
-            .offset(y: .defaultHeaderHeight + .defaultLargeContentPadding)
+            .offset(y: .defaultHeaderHeight)
         }
     }
     
@@ -61,6 +66,7 @@ struct RootView: View {
                 namespaceId: animation,
                 onTapClose: { vm.dismissSelectedCountryDetail() }
             )
+            .transition(.identity)
         }
     }
 }

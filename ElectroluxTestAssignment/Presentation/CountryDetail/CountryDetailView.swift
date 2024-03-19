@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CountryDetailView: View {
     @StateObject private var vm: CountryDetailViewModel
-    
+        
     init(
         country: CountryItem,
         namespaceId: Namespace.ID,
@@ -24,17 +24,33 @@ struct CountryDetailView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            Button("CLOSE", action: vm.dismissCountryDetail)
-            
             FlagCardView(
                 country: vm.country,
                 namespaceId: vm.namespaceId
             )
         }
+        .onAppear(perform: {
+            vm.animateOnAppear()
+        })
         .padding(.top, 60)
+        .overlay(alignment: .topTrailing) { closeButton }
         .padding(.horizontal, .defaultPadding)
         .maxHeight(.infinity, alignment: .top)
         .background(Color.theme.background100)
+    }
+    
+    private var closeButton: some View {
+        Button(action: { vm.dismissCountryDetail() }, label: {
+            Image(systemName: "xmark")
+                .foregroundColor(Color.theme.textPrimary)
+                .bodyHeavy()
+                .padding(.x2)
+                .background(.ultraThinMaterial)
+                .cornerRadius(.x1, corners: [.allCorners])
+                .cornerRadius(.x2, corners: [.topRight])
+        })
+        .opacity(vm.isAnimatingOnAppear ? 1 : 0)
+        .allowsHitTesting(vm.isAnimatingOnAppear)
     }
 }
 

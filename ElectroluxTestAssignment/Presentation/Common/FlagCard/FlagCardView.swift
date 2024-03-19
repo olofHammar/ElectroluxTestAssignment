@@ -28,7 +28,6 @@ struct FlagCardView: View {
     }
     var body: some View {
         cardContainer
-            .matchedGeometryEffect(id: countryId, in: namespaceId)
             .onTapGesture(perform: { onTap?() })
     }
     
@@ -38,6 +37,7 @@ struct FlagCardView: View {
             
             bottomRowContainer
         }
+        .matchedGeometryEffect(id: countryId, in: namespaceId)
         .defaultBorderShadow()
     }
     

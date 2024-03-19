@@ -10,15 +10,12 @@ import Foundation
 import SwiftUI
 
 final class RootViewModel: ObservableObject {
-    
     @Published private(set) var countryList: [CountryItem] = []
     @Published private(set) var selectedCountry: CountryItem?
-    
     @Published private(set) var didDismissHeaderView: Bool = false
     @Published private(set) var isPresentingCountryDetail: Bool = false
-        
+            
     private let dataSource: CountryDataSource
-    
     private var countrySubscription: AnyCancellable?
     
     init(
