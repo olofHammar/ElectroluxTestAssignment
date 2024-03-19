@@ -30,25 +30,7 @@ struct CountryDetailView: View {
             )
             .padding(.bottom, .defaultLargeContentPadding)
             
-            VStack(spacing: 4) {
-                SectionRow(
-                    iconString: "dollarsign.circle",
-                    title: "Currency",
-                    subtitles: [vm.country.currency],
-                    cornerRadius: .x2,
-                    leadingCorner: [.topLeft],
-                    trailingCorner: [.topRight]
-                )
-                
-                SectionRow(
-                    iconString: "bubble.circle",
-                    title: "Languages",
-                    subtitles: vm.country.languages,
-                    cornerRadius: .x2,
-                    leadingCorner: [.bottomLeft],
-                    trailingCorner: [.bottomRight]
-                )
-            }
+            infoSectionRows
         }
         .onAppear(perform: {
             vm.animateOnAppear()
@@ -58,6 +40,30 @@ struct CountryDetailView: View {
         .padding(.horizontal, .defaultPadding)
         .maxHeight(.infinity, alignment: .top)
         .background(Color.theme.background100)
+    }
+    
+    private var infoSectionRows: some View {
+        VStack(spacing: 4) {
+            SectionRow(
+                iconString: "dollarsign.circle",
+                title: String.currencyTitle.uppercased(),
+                subtitles: [vm.country.currency],
+                cornerRadius: .x2,
+                leadingCorner: [.topLeft],
+                trailingCorner: [.topRight]
+            )
+            .offset(x: vm.animationValues[0] ? 0 : .defaultContentOffset)
+            
+            SectionRow(
+                iconString: "bubble.circle",
+                title: String.languagesTitle.uppercased(),
+                subtitles: vm.country.languages,
+                cornerRadius: .x2,
+                leadingCorner: [.bottomLeft],
+                trailingCorner: [.bottomRight]
+            )
+            .offset(x: vm.animationValues[1] ? 0 : .defaultContentOffset)
+        }
     }
     
     private var closeButton: some View {
@@ -70,8 +76,8 @@ struct CountryDetailView: View {
                 .cornerRadius(.x1, corners: [.allCorners])
                 .cornerRadius(.x2, corners: [.topRight])
         })
-        .opacity(vm.isAnimatingOnAppear ? 1 : 0)
-        .allowsHitTesting(vm.isAnimatingOnAppear)
+        .opacity(vm.isAnimatingCloseButton ? 1 : 0)
+        .allowsHitTesting(vm.isAnimatingCloseButton)
     }
 }
 

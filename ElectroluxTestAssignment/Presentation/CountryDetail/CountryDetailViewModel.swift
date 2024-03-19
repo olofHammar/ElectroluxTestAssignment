@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 final class CountryDetailViewModel: ObservableObject {
-        
-    @Published private(set) var isAnimatingOnAppear: Bool = false
+    @Published private(set) var isAnimatingCloseButton: Bool = false
+    @Published private(set) var animationValues: [Bool] = [false, false]
     
     let country: CountryItem
     let namespaceId: Namespace.ID
@@ -28,8 +28,20 @@ final class CountryDetailViewModel: ObservableObject {
     }
     
     func animateOnAppear() {
-        withAnimation(.easeIn(duration: 0.5)) {
-            isAnimatingOnAppear = true 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.32) {
+            for (index, _) in self.animationValues.enumerated() {
+                DispatchQueue.main.asyncAfter(deadline: .now() + (Double(index) * 0.16)) {
+                    withAnimation(.spring) {
+                        self.animationValues[index] = true
+                    }
+                }
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            withAnimation(.easeInOut(duration: 0.4)) {
+                self.isAnimatingCloseButton = true 
+            }
         }
     }
     
