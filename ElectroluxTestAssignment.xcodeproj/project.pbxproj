@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4371EC62BA979EA007CF442 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EC52BA979EA007CF442 /* Color+Theme.swift */; };
 		E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */; };
 		E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FE2BA86E5500041796 /* ContentView.swift */; };
 		E45F58012BA86E5600041796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45F58002BA86E5600041796 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4371EC52BA979EA007CF442 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		E45F57F92BA86E5500041796 /* ElectroluxTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroluxTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentApp.swift; sourceTree = "<group>"; };
 		E45F57FE2BA86E5500041796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,7 +157,6 @@
 		E45F58272BA8749300041796 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E45F582D2BA8753E00041796 /* Colors */,
 				E45F582C2BA8753500041796 /* Dimensions */,
 				E45F582E2BA8754D00041796 /* Strings */,
 				E45F58002BA86E5600041796 /* Assets.xcassets */,
@@ -191,6 +192,7 @@
 		E45F582B2BA8752400041796 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E45F582D2BA8753E00041796 /* Colors */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +207,7 @@
 		E45F582D2BA8753E00041796 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				E4371EC52BA979EA007CF442 /* Color+Theme.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			files = (
 				E45F58392BA8822200041796 /* CountryError.swift in Sources */,
 				E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */,
+				E4371EC62BA979EA007CF442 /* Color+Theme.swift in Sources */,
 				E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */,
 				E45F583D2BA897E200041796 /* RootViewModel.swift in Sources */,
 				E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */,
