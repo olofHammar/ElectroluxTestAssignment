@@ -28,11 +28,32 @@ struct CountryDetailView: View {
                 country: vm.country,
                 namespaceId: vm.namespaceId
             )
+            .padding(.bottom, .defaultLargeContentPadding)
+            
+            VStack(spacing: 4) {
+                SectionRow(
+                    iconString: "dollarsign.circle",
+                    title: "Currency",
+                    subtitles: [vm.country.currency],
+                    cornerRadius: .x2,
+                    leadingCorner: [.topLeft],
+                    trailingCorner: [.topRight]
+                )
+                
+                SectionRow(
+                    iconString: "bubble.circle",
+                    title: "Languages",
+                    subtitles: vm.country.languages,
+                    cornerRadius: .x2,
+                    leadingCorner: [.bottomLeft],
+                    trailingCorner: [.bottomRight]
+                )
+            }
         }
         .onAppear(perform: {
             vm.animateOnAppear()
         })
-        .padding(.top, 60)
+        .padding(.top, 80)
         .overlay(alignment: .topTrailing) { closeButton }
         .padding(.horizontal, .defaultPadding)
         .maxHeight(.infinity, alignment: .top)

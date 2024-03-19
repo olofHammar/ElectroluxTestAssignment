@@ -28,6 +28,12 @@ extension View {
         self.font(.system(.body, design: .serif).weight(.heavy)).tracking(0.5)
     }
     
+    /// Applies an heavy caption font to the view.
+    /// - Returns: A view with the specified font style.
+    func captionHeavy() -> some View {
+        self.font(.system(.caption, design: .rounded).weight(.semibold))
+    }
+    
     /// Applies an heavy caption2 font to the view.
     /// - Returns: A view with the specified font style.
     func caption2Heavy() -> some View {
