@@ -17,8 +17,11 @@
 		E4371EDD2BA99A84007CF442 /* View+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EDC2BA99A84007CF442 /* View+Shadow.swift */; };
 		E4371EDF2BA99C3D007CF442 /* Strings+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EDE2BA99C3D007CF442 /* Strings+.swift */; };
 		E4371EE32BA99D1B007CF442 /* CountryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EE22BA99D1B007CF442 /* CountryHeaderView.swift */; };
+		E4371EE52BA9ACF4007CF442 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EE42BA9ACF4007CF442 /* CountryDetailView.swift */; };
+		E4371EE72BA9AD26007CF442 /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EE62BA9AD26007CF442 /* CountryDetailViewModel.swift */; };
+		E4371EEA2BA9C797007CF442 /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EE92BA9C797007CF442 /* SectionRow.swift */; };
+		E4371EED2BA9CEE2007CF442 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EEC2BA9CEE2007CF442 /* String+.swift */; };
 		E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */; };
-		E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FE2BA86E5500041796 /* ContentView.swift */; };
 		E45F58012BA86E5600041796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45F58002BA86E5600041796 /* Assets.xcassets */; };
 		E45F58042BA86E5600041796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45F58032BA86E5600041796 /* Preview Assets.xcassets */; };
 		E45F58182BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58172BA86E5600041796 /* ElectroluxTestAssignmentUITests.swift */; };
@@ -60,9 +63,12 @@
 		E4371EDC2BA99A84007CF442 /* View+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shadow.swift"; sourceTree = "<group>"; };
 		E4371EDE2BA99C3D007CF442 /* Strings+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+.swift"; sourceTree = "<group>"; };
 		E4371EE22BA99D1B007CF442 /* CountryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryHeaderView.swift; sourceTree = "<group>"; };
+		E4371EE42BA9ACF4007CF442 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		E4371EE62BA9AD26007CF442 /* CountryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewModel.swift; sourceTree = "<group>"; };
+		E4371EE92BA9C797007CF442 /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		E4371EEC2BA9CEE2007CF442 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		E45F57F92BA86E5500041796 /* ElectroluxTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroluxTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentApp.swift; sourceTree = "<group>"; };
-		E45F57FE2BA86E5500041796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E45F58002BA86E5600041796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E45F58032BA86E5600041796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E45F58092BA86E5600041796 /* ElectroluxTestAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectroluxTestAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +152,22 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		E4371EE82BA9C777007CF442 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E4371EE92BA9C797007CF442 /* SectionRow.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		E4371EEB2BA9CED3007CF442 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				E4371EEC2BA9CEE2007CF442 /* String+.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		E45F57F02BA86E5500041796 = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +194,6 @@
 				E45F58282BA874B800041796 /* DataSource */,
 				E45F58262BA8742200041796 /* Presentation */,
 				E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */,
-				E45F57FE2BA86E5500041796 /* ContentView.swift */,
 				E45F58022BA86E5600041796 /* Preview Content */,
 			);
 			path = ElectroluxTestAssignment;
@@ -249,6 +270,9 @@
 		E45F582A2BA874EB00041796 /* CountryDetail */ = {
 			isa = PBXGroup;
 			children = (
+				E4371EE82BA9C777007CF442 /* ViewComponents */,
+				E4371EE42BA9ACF4007CF442 /* CountryDetailView.swift */,
+				E4371EE62BA9AD26007CF442 /* CountryDetailViewModel.swift */,
 			);
 			path = CountryDetail;
 			sourceTree = "<group>";
@@ -257,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				E45F582D2BA8753E00041796 /* Colors */,
+				E4371EEB2BA9CED3007CF442 /* String */,
 				E4371ECD2BA97F3E007CF442 /* View */,
 			);
 			path = Extensions;
@@ -442,11 +467,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4371EEA2BA9C797007CF442 /* SectionRow.swift in Sources */,
+				E4371EE72BA9AD26007CF442 /* CountryDetailViewModel.swift in Sources */,
 				E45F58392BA8822200041796 /* CountryError.swift in Sources */,
 				E4371EDB2BA99A59007CF442 /* View+CornerRadius.swift in Sources */,
 				E4371EDF2BA99C3D007CF442 /* Strings+.swift in Sources */,
-				E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */,
+				E4371EED2BA9CEE2007CF442 /* String+.swift in Sources */,
 				E4371EC62BA979EA007CF442 /* Color+Theme.swift in Sources */,
+				E4371EE52BA9ACF4007CF442 /* CountryDetailView.swift in Sources */,
 				E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */,
 				E4371EC82BA97ACD007CF442 /* Dimensions.swift in Sources */,
 				E4371ED62BA98676007CF442 /* View+FontStyle.swift in Sources */,

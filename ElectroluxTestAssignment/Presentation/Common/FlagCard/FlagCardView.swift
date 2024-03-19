@@ -13,19 +13,22 @@ struct FlagCardView: View {
     private let imageString: String
     
     private let namespaceId: Namespace.ID
+    private let onTap: (() -> Void)?
     
     init(
         country: CountryItem,
-        namespaceId: Namespace.ID
+        namespaceId: Namespace.ID,
+        onTap: (() -> Void)? = nil
     ) {
         self.countryId = country.id
         self.countryName = country.name
         self.imageString = country.flagImageString
         self.namespaceId = namespaceId
+        self.onTap = onTap
     }
     var body: some View {
         cardContainer
-            .matchedGeometryEffect(id: countryId, in: namespaceId)
+            .onTapGesture(perform: { onTap?() })
     }
     
     private var cardContainer: some View {
@@ -34,6 +37,7 @@ struct FlagCardView: View {
             
             bottomRowContainer
         }
+        .matchedGeometryEffect(id: countryId, in: namespaceId)
         .defaultBorderShadow()
     }
     
@@ -59,11 +63,11 @@ struct FlagCardView: View {
     }
     
     private var iconContainer: some View {
-        Image(systemName: "globe.desk")
+        Image(systemName: "globe.europe.africa.fill")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .height(.defaultIconHeight)
-            .fontWeight(.semibold)
+            .fontWeight(.light)
             .foregroundStyle(Color.theme.background300.shadow(.drop(radius: 2)))
             .padding(.horizontal, .defaultPadding)
             .padding(.vertical, .defaultSmallContentPadding)
@@ -75,11 +79,11 @@ struct FlagCardView: View {
         VStack(alignment: .leading) {
             Text(String.countryTitle.uppercased())
                 .foregroundStyle(Color.theme.textAccent)
-                .font(.system(.caption2, design: .serif).weight(.heavy))
+                .caption2Heavy()
             
             Text(countryName)
                 .foregroundStyle(Color.theme.textPrimary)
-                .font(.system(.body, design: .serif).weight(.heavy))
+                .bodyHeavy()
         }
         .maxWidth(.infinity, alignment: .leading)
         .padding(.leading, .defaultPadding)

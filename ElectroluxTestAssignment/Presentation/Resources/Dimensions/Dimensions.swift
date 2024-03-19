@@ -25,6 +25,9 @@ extension CGFloat {
     /// The default scrollview bottom padding value used in layouts.
     static var defaultScrollBottomPadding: CGFloat { 100 }
     
+    /// The default content offset value used in layouts.
+    static var defaultContentOffset: CGFloat = 500
+    
     /// The default corner radius value used in layouts.
     static var defaultCornerRadius: CGFloat { .x2 }
 
@@ -32,7 +35,7 @@ extension CGFloat {
     static let defaultHeaderHeight: CGFloat = 100
     
     /// The default height for flag images.
-    static let defaultFlagImageHeight: CGFloat = 140
+    static let defaultFlagImageHeight: CGFloat = 120
     
     /// The default height for icon images.
     static let defaultIconHeight: CGFloat = 36

@@ -19,6 +19,30 @@ extension View {
     /// Applies an heavy title2 font to the view.
     /// - Returns: A view with the specified font style.
     func title2Heavy() -> some View {
-        self.font(.system(.title2, design: .serif).weight(.heavy))
+        self.font(.system(.title2, design: .serif).weight(.heavy)).tracking(0.5)
+    }
+    
+    /// Applies an heavy body font to the view.
+    /// - Returns: A view with the specified font style.
+    func bodyHeavy() -> some View {
+        self.font(.system(.body, design: .serif).weight(.heavy)).tracking(0.5)
+    }
+    
+    /// Applies an heavy caption font to the view.
+    /// - Returns: A view with the specified font style.
+    func captionHeavy() -> some View {
+        self.font(.system(.caption, design: .rounded).weight(.semibold))
+    }
+    
+    /// Applies an heavy caption2 font to the view.
+    /// - Returns: A view with the specified font style.
+    func caption2Heavy() -> some View {
+        self.font(.system(.caption2, design: .rounded).weight(.semibold))
+    }
+    
+    /// Applies an semibold footnote font to the view.
+    /// - Returns: A view with the specified font style.
+    func footnoteSemiboldItalic() -> some View {
+        self.font(.system(.footnote, design: .rounded).weight(.semibold).italic())
     }
 }

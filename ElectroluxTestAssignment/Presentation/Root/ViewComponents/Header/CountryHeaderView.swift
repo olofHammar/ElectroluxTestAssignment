@@ -16,8 +16,7 @@ struct CountryHeaderView: View {
                 .title2Heavy()
             
             Text(String.headerSubtitle)
-                .font(.footnote.italic())
-                .fontWeight(.bold)
+                .footnoteSemiboldItalic()
                 .foregroundStyle(Color.theme.textAccent)
         }
         .maxWidth(.infinity, alignment: .leading)
