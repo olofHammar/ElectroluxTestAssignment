@@ -59,11 +59,11 @@ struct FlagCardView: View {
     }
     
     private var iconContainer: some View {
-        Image(systemName: "globe.desk")
+        Image(systemName: "globe.europe.africa.fill")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .height(.defaultIconHeight)
-            .fontWeight(.semibold)
+            .fontWeight(.light)
             .foregroundStyle(Color.theme.background300.shadow(.drop(radius: 2)))
             .padding(.horizontal, .defaultPadding)
             .padding(.vertical, .defaultSmallContentPadding)
@@ -75,11 +75,11 @@ struct FlagCardView: View {
         VStack(alignment: .leading) {
             Text(String.countryTitle.uppercased())
                 .foregroundStyle(Color.theme.textAccent)
-                .font(.system(.caption2, design: .serif).weight(.heavy))
+                .caption2Heavy()
             
             Text(countryName)
                 .foregroundStyle(Color.theme.textPrimary)
-                .font(.system(.body, design: .serif).weight(.heavy))
+                .bodyHeavy()
         }
         .maxWidth(.infinity, alignment: .leading)
         .padding(.leading, .defaultPadding)

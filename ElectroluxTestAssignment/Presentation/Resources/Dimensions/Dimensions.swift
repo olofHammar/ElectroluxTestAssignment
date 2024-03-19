@@ -32,7 +32,7 @@ extension CGFloat {
     static let defaultHeaderHeight: CGFloat = 100
     
     /// The default height for flag images.
-    static let defaultFlagImageHeight: CGFloat = 140
+    static let defaultFlagImageHeight: CGFloat = 120
     
     /// The default height for icon images.
     static let defaultIconHeight: CGFloat = 36
