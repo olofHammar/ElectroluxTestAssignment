@@ -20,6 +20,8 @@ final class RootViewModel: ObservableObject {
         countryDataSource: CountryDataSource
     ) {
         self.dataSource = countryDataSource
+        
+        fetchCountries()
     }
     
     deinit {
