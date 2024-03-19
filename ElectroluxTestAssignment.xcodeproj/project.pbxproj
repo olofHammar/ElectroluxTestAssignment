@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E4371EC62BA979EA007CF442 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EC52BA979EA007CF442 /* Color+Theme.swift */; };
+		E4371EC82BA97ACD007CF442 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EC72BA97ACD007CF442 /* Dimensions.swift */; };
 		E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */; };
 		E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FE2BA86E5500041796 /* ContentView.swift */; };
 		E45F58012BA86E5600041796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45F58002BA86E5600041796 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		E4371EC52BA979EA007CF442 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		E4371EC72BA97ACD007CF442 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		E45F57F92BA86E5500041796 /* ElectroluxTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroluxTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentApp.swift; sourceTree = "<group>"; };
 		E45F57FE2BA86E5500041796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		E45F582C2BA8753500041796 /* Dimensions */ = {
 			isa = PBXGroup;
 			children = (
+				E4371EC72BA97ACD007CF442 /* Dimensions.swift */,
 			);
 			path = Dimensions;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */,
 				E4371EC62BA979EA007CF442 /* Color+Theme.swift in Sources */,
 				E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */,
+				E4371EC82BA97ACD007CF442 /* Dimensions.swift in Sources */,
 				E45F583D2BA897E200041796 /* RootViewModel.swift in Sources */,
 				E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */,
 				E45F58342BA87CE000041796 /* CountryItem.swift in Sources */,
