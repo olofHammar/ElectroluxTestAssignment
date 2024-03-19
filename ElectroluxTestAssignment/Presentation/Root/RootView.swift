@@ -24,6 +24,8 @@ struct RootView: View {
                 Text(country.name)
             }
         }
+        .padding(.defaultPadding)
+        .maxWidth(.infinity, alignment: .leading)
     }
 }
 
