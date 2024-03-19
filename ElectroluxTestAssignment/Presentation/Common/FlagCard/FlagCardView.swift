@@ -66,7 +66,7 @@ struct FlagCardView: View {
             .fontWeight(.semibold)
             .foregroundStyle(Color.theme.background300.shadow(.drop(radius: 2)))
             .padding(.horizontal, .defaultPadding)
-            .padding(.vertical, .defaultPadding)
+            .padding(.vertical, .defaultSmallContentPadding)
             .background(Color.theme.background200)
             .cornerRadius(.defaultCornerRadius, corners: [.bottomLeft])
     }
@@ -83,7 +83,7 @@ struct FlagCardView: View {
         }
         .maxWidth(.infinity, alignment: .leading)
         .padding(.leading, .defaultPadding)
-        .padding(.vertical, .defaultPadding)
+        .padding(.vertical, .defaultSmallContentPadding)
         .background(Color.theme.background200)
         .cornerRadius(.defaultCornerRadius, corners: [.bottomRight])
     }

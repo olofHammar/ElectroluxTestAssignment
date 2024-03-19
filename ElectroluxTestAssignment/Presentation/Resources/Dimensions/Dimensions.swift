@@ -12,12 +12,24 @@ extension CGFloat {
     
     /// The default padding value used in layouts.
     static var defaultPadding: CGFloat { .x2 }
+
+    /// The default small padding value used in layouts.
+    static var defaultSmallContentPadding: CGFloat { .x1 + 4 }
     
     /// The default large padding value used in layouts.
     static var defaultLargeContentPadding: CGFloat { .x4 }
     
+    /// The default scrollview top padding value used in layouts.
+    static var defaultScrollTopPadding: CGFloat { .x4 * 2 }
+    
+    /// The default scrollview bottom padding value used in layouts.
+    static var defaultScrollBottomPadding: CGFloat { 100 }
+    
     /// The default corner radius value used in layouts.
     static var defaultCornerRadius: CGFloat { .x2 }
+
+    /// The default height for header views.
+    static let defaultHeaderHeight: CGFloat = 100
     
     /// The default height for flag images.
     static let defaultFlagImageHeight: CGFloat = 140

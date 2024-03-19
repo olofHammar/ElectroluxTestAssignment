@@ -15,4 +15,10 @@ extension View {
     func titleItalicHeavy() -> some View {
         self.font(.system(.title, design: .serif).weight(.heavy).italic())
     }
+    
+    /// Applies an heavy title2 font to the view.
+    /// - Returns: A view with the specified font style.
+    func title2Heavy() -> some View {
+        self.font(.system(.title2, design: .serif).weight(.heavy))
+    }
 }

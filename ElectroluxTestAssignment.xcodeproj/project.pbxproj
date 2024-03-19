@@ -16,6 +16,7 @@
 		E4371EDB2BA99A59007CF442 /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EDA2BA99A59007CF442 /* View+CornerRadius.swift */; };
 		E4371EDD2BA99A84007CF442 /* View+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EDC2BA99A84007CF442 /* View+Shadow.swift */; };
 		E4371EDF2BA99C3D007CF442 /* Strings+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EDE2BA99C3D007CF442 /* Strings+.swift */; };
+		E4371EE32BA99D1B007CF442 /* CountryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371EE22BA99D1B007CF442 /* CountryHeaderView.swift */; };
 		E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */; };
 		E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FE2BA86E5500041796 /* ContentView.swift */; };
 		E45F58012BA86E5600041796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45F58002BA86E5600041796 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		E4371EDA2BA99A59007CF442 /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
 		E4371EDC2BA99A84007CF442 /* View+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Shadow.swift"; sourceTree = "<group>"; };
 		E4371EDE2BA99C3D007CF442 /* Strings+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+.swift"; sourceTree = "<group>"; };
+		E4371EE22BA99D1B007CF442 /* CountryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryHeaderView.swift; sourceTree = "<group>"; };
 		E45F57F92BA86E5500041796 /* ElectroluxTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroluxTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentApp.swift; sourceTree = "<group>"; };
 		E45F57FE2BA86E5500041796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,22 @@
 				E4371ED32BA98090007CF442 /* FlagCardView.swift */,
 			);
 			path = FlagCard;
+			sourceTree = "<group>";
+		};
+		E4371EE02BA99CF0007CF442 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E4371EE12BA99CFC007CF442 /* Header */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		E4371EE12BA99CFC007CF442 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E4371EE22BA99D1B007CF442 /* CountryHeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		E45F57F02BA86E5500041796 = {
@@ -221,6 +239,7 @@
 		E45F58292BA874D700041796 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				E4371EE02BA99CF0007CF442 /* ViewComponents */,
 				E45F583C2BA897E200041796 /* RootViewModel.swift */,
 				E4371ECB2BA97DBD007CF442 /* RootView.swift */,
 			);
@@ -433,6 +452,7 @@
 				E4371ED62BA98676007CF442 /* View+FontStyle.swift in Sources */,
 				E4371ED42BA98090007CF442 /* FlagCardView.swift in Sources */,
 				E4371EDD2BA99A84007CF442 /* View+Shadow.swift in Sources */,
+				E4371EE32BA99D1B007CF442 /* CountryHeaderView.swift in Sources */,
 				E4371ECC2BA97DBD007CF442 /* RootView.swift in Sources */,
 				E45F583D2BA897E200041796 /* RootViewModel.swift in Sources */,
 				E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */,

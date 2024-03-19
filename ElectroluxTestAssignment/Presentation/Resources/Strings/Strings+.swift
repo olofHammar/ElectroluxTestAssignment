@@ -9,4 +9,6 @@ import SwiftUI
 
 extension String {
     static let countryTitle = "Country"
+    static let headerTitle = "Country List"
+    static let headerSubtitle = "by: Olof Hammar"
 }

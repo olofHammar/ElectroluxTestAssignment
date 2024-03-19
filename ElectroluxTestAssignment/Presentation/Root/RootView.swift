@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RootView: View {
     @StateObject private var vm: RootViewModel
-    @Namespace var animation
+    @Namespace private var animation
 
     init(
         countryDataSource: CountryDataSource
@@ -21,13 +21,7 @@ struct RootView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            Text("COUNTRY LIST")
-                .foregroundStyle(Color.theme.textPrimary)
-                .titleItalicHeavy()
-                .maxWidth(.infinity)
-                .maxHeight(80, alignment: .bottom)
-                .padding(.vertical, 24)
-                .background(headerBackground)
+            CountryHeaderView()
                 .zIndex(1)
             
             listContainer
@@ -45,15 +39,10 @@ struct RootView: View {
                     FlagCardView(country: country, namespaceId: animation)
                 }
             }
-            .padding(.top, 54)
-            .offset(y: 120)
+            .padding(.vertical, .defaultScrollTopPadding)
+            .padding(.bottom, .defaultScrollBottomPadding)
+            .offset(y: .defaultHeaderHeight + .defaultLargeContentPadding)
         }
-    }
-    
-    private var headerBackground: some View {
-        Color.theme.background100
-            .shadow(color: .black.opacity(0.2), radius: 2, x: 0, y: 2)
-            .shadow(color: .black, radius: 8, x: 0, y: 5)
     }
 }
 
