@@ -191,7 +191,7 @@
 		E45F57FB2BA86E5500041796 /* ElectroluxTestAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				E45F58282BA874B800041796 /* DataSource */,
+				E45F58282BA874B800041796 /* Data */,
 				E45F58262BA8742200041796 /* Presentation */,
 				E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */,
 				E45F58022BA86E5600041796 /* Preview Content */,
@@ -247,14 +247,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E45F58282BA874B800041796 /* DataSource */ = {
+		E45F58282BA874B800041796 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				E45F58352BA880FF00041796 /* CountryDataSource */,
 				E45F58322BA87CCE00041796 /* Entities */,
 				E45F582F2BA879D200041796 /* Fixtures */,
 			);
-			path = DataSource;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		E45F58292BA874D700041796 /* Root */ = {
