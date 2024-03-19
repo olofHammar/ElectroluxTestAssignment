@@ -46,6 +46,6 @@ final class CountryDetailViewModel: ObservableObject {
     }
     
     func dismissCountryDetail() {
-        self.onTapClose?()
+        onTapClose?()
     }
 }

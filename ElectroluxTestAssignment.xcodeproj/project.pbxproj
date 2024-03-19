@@ -112,10 +112,10 @@
 		E4371ECD2BA97F3E007CF442 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E4371ECE2BA97F5F007CF442 /* View+Size.swift */,
-				E4371ED52BA98676007CF442 /* View+FontStyle.swift */,
 				E4371EDA2BA99A59007CF442 /* View+CornerRadius.swift */,
+				E4371ED52BA98676007CF442 /* View+FontStyle.swift */,
 				E4371EDC2BA99A84007CF442 /* View+Shadow.swift */,
+				E4371ECE2BA97F5F007CF442 /* View+Size.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

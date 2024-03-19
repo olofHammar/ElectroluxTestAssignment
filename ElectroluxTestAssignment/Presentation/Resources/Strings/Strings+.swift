@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Extension providing default String values used in application.
 extension String {
     static let countryTitle = "Country"
     static let headerTitle = "Country List"
