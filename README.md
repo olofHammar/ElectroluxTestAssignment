@@ -1,4 +1,4 @@
-# ElectroluxTestAssignment
+# Electrolux Test Assignment
 
 ## Country Viewer
  Country Viewer is a simple iOS app that displays a list of ten selected countries. 
