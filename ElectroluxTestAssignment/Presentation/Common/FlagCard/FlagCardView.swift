@@ -45,6 +45,8 @@ struct FlagCardView: View {
     
     private var titleContainer: some View {
         Text(countryName)
+            .foregroundStyle(Color.theme.textPrimary)
+            .font(.system(.title, design: .serif).weight(.heavy).italic())
     }
 }
 
@@ -56,6 +58,8 @@ struct FlagCardView_Previews: PreviewProvider {
             country: .demoCountry,
             namespaceId: animation
         )
+        .maxHeight(.infinity)
+        .background(Color.theme.background100)
     }
 }
 

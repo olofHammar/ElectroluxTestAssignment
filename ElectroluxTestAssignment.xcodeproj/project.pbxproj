@@ -12,6 +12,7 @@
 		E4371ECC2BA97DBD007CF442 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371ECB2BA97DBD007CF442 /* RootView.swift */; };
 		E4371ECF2BA97F5F007CF442 /* View+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371ECE2BA97F5F007CF442 /* View+Size.swift */; };
 		E4371ED42BA98090007CF442 /* FlagCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371ED32BA98090007CF442 /* FlagCardView.swift */; };
+		E4371ED62BA98676007CF442 /* View+FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4371ED52BA98676007CF442 /* View+FontStyle.swift */; };
 		E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */; };
 		E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F57FE2BA86E5500041796 /* ContentView.swift */; };
 		E45F58012BA86E5600041796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45F58002BA86E5600041796 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		E4371ECB2BA97DBD007CF442 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E4371ECE2BA97F5F007CF442 /* View+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Size.swift"; sourceTree = "<group>"; };
 		E4371ED32BA98090007CF442 /* FlagCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagCardView.swift; sourceTree = "<group>"; };
+		E4371ED52BA98676007CF442 /* View+FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FontStyle.swift"; sourceTree = "<group>"; };
 		E45F57F92BA86E5500041796 /* ElectroluxTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroluxTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45F57FC2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroluxTestAssignmentApp.swift; sourceTree = "<group>"; };
 		E45F57FE2BA86E5500041796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E4371ECE2BA97F5F007CF442 /* View+Size.swift */,
+				E4371ED52BA98676007CF442 /* View+FontStyle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				E4371EC62BA979EA007CF442 /* Color+Theme.swift in Sources */,
 				E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */,
 				E4371EC82BA97ACD007CF442 /* Dimensions.swift in Sources */,
+				E4371ED62BA98676007CF442 /* View+FontStyle.swift in Sources */,
 				E4371ED42BA98090007CF442 /* FlagCardView.swift in Sources */,
 				E4371ECC2BA97DBD007CF442 /* RootView.swift in Sources */,
 				E45F583D2BA897E200041796 /* RootViewModel.swift in Sources */,
