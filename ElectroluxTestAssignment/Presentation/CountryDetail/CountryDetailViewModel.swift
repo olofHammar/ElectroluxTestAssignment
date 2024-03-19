@@ -9,19 +9,23 @@ import Foundation
 import SwiftUI
 
 final class CountryDetailViewModel: ObservableObject {
-    
+        
     let country: CountryItem
-    let animationId: Namespace.ID
+    let namespaceId: Namespace.ID
 
     private let onTapClose: (() -> Void)?
     
     init(
         country: CountryItem,
-        animationId: Namespace.ID,
+        namespaceId: Namespace.ID,
         onTapClose: (() -> Void)?
     ) {
         self.country = country
-        self.animationId = animationId
+        self.namespaceId = namespaceId
         self.onTapClose = onTapClose
+    }
+    
+    func dismissCountryDetail() {
+        onTapClose?()
     }
 }

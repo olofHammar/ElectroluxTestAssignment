@@ -12,20 +12,29 @@ struct CountryDetailView: View {
     
     init(
         country: CountryItem,
-        animationId: Namespace.ID,
+        namespaceId: Namespace.ID,
         onTapClose: (() -> Void)? = nil
     ) {
         self._vm = StateObject(wrappedValue: CountryDetailViewModel(
             country: country,
-            animationId: animationId,
+            namespaceId: namespaceId,
             onTapClose: onTapClose
         ))
     }
     
     var body: some View {
         VStack(spacing: 0) {
-            FlagCardView(country: vm.country, namespaceId: vm.animationId)
+            Button("CLOSE", action: vm.dismissCountryDetail)
+            
+            FlagCardView(
+                country: vm.country,
+                namespaceId: vm.namespaceId
+            )
         }
+        .padding(.top, 60)
+        .padding(.horizontal, .defaultPadding)
+        .maxHeight(.infinity, alignment: .top)
+        .background(Color.theme.background100)
     }
 }
 
@@ -33,6 +42,9 @@ struct CountryDetailView_Previews: PreviewProvider {
     @Namespace static var animation
     
     static var previews: some View {
-        CountryDetailView(country: .demoCountry, animationId: animation)
+        CountryDetailView(
+            country: .demoCountry,
+            namespaceId: animation
+        )
     }
 }

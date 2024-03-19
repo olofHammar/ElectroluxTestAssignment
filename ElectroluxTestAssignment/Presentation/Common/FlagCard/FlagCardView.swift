@@ -13,19 +13,23 @@ struct FlagCardView: View {
     private let imageString: String
     
     private let namespaceId: Namespace.ID
+    private let onTap: (() -> Void)?
     
     init(
         country: CountryItem,
-        namespaceId: Namespace.ID
+        namespaceId: Namespace.ID,
+        onTap: (() -> Void)? = nil
     ) {
         self.countryId = country.id
         self.countryName = country.name
         self.imageString = country.flagImageString
         self.namespaceId = namespaceId
+        self.onTap = onTap
     }
     var body: some View {
         cardContainer
             .matchedGeometryEffect(id: countryId, in: namespaceId)
+            .onTapGesture(perform: { onTap?() })
     }
     
     private var cardContainer: some View {

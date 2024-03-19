@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 /// An `Entity` representing a country item with essential details.
-struct CountryItem: Identifiable, Codable {
+struct CountryItem: Identifiable, Codable, Equatable {
     
     /// A unique identifier for the country item.
     var id: String

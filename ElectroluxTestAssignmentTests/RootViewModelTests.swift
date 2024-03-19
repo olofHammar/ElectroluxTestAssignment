@@ -45,4 +45,24 @@ final class RootViewModelTests: XCTestCase {
 
         cancellable.cancel()
     }
+    
+    func test_present_selected_country_sets_selectedCountry_correctly() {
+        let selectedCountry = CountryItem.demoCountry
+        
+        sut.presentSelectedCountryDetail(for: selectedCountry)
+        
+        XCTAssertEqual(sut.selectedCountry, selectedCountry)
+    }
+    
+    func test_dismiss_selected_country_resets_selectedCountry_to_nil() {
+        let selectedCountry = CountryItem.demoCountry
+        
+        sut.presentSelectedCountryDetail(for: selectedCountry)
+        
+        XCTAssertNotNil(sut.selectedCountry)
+        
+        sut.dismissSelectedCountryDetail()
+        
+        XCTAssertNil(sut.selectedCountry)
+    }
 }
