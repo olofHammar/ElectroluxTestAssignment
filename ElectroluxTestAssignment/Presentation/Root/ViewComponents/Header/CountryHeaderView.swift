@@ -13,10 +13,10 @@ struct CountryHeaderView: View {
         VStack(alignment: .leading) {
             Text(String.headerTitle)
                 .foregroundStyle(Color.theme.textPrimary)
-                .title2Heavy()
+                .title2HeavySerif()
             
             Text(String.headerSubtitle)
-                .footnoteSemiboldItalic()
+                .footnoteSemiboldItalicRounded()
                 .foregroundStyle(Color.theme.textAccent)
         }
         .maxWidth(.infinity, alignment: .leading)
