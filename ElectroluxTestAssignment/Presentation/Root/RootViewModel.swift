@@ -1,5 +1,5 @@
 //
-//  CountryListViewModel.swift
+//  RootViewModel.swift
 //  ElectroluxTestAssignment
 //
 //  Created by Olof Hammar on 2024-03-18.
@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-final class CountryListViewModel: ObservableObject {
+final class RootViewModel: ObservableObject {
     
     @Published private(set) var countryList: [CountryItem] = []
     

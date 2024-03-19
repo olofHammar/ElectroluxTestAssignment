@@ -18,8 +18,8 @@
 		E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58362BA8811300041796 /* CountryDataSource.swift */; };
 		E45F58392BA8822200041796 /* CountryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F58382BA8822200041796 /* CountryError.swift */; };
 		E45F583B2BA8850100041796 /* CountriesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */; };
-		E45F583D2BA897E200041796 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583C2BA897E200041796 /* CountryListViewModel.swift */; };
-		E45F583F2BA89A2700041796 /* CountryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583E2BA89A2700041796 /* CountryListViewModelTests.swift */; };
+		E45F583D2BA897E200041796 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583C2BA897E200041796 /* RootViewModel.swift */; };
+		E45F583F2BA89A2700041796 /* RootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45F583E2BA89A2700041796 /* RootViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		E45F58362BA8811300041796 /* CountryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataSource.swift; sourceTree = "<group>"; };
 		E45F58382BA8822200041796 /* CountryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryError.swift; sourceTree = "<group>"; };
 		E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDataSourceTests.swift; sourceTree = "<group>"; };
-		E45F583C2BA897E200041796 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
-		E45F583E2BA89A2700041796 /* CountryListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModelTests.swift; sourceTree = "<group>"; };
+		E45F583C2BA897E200041796 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		E45F583E2BA89A2700041796 /* RootViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				E45F583A2BA8850100041796 /* CountriesDataSourceTests.swift */,
-				E45F583E2BA89A2700041796 /* CountryListViewModelTests.swift */,
+				E45F583E2BA89A2700041796 /* RootViewModelTests.swift */,
 			);
 			path = ElectroluxTestAssignmentTests;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				E45F582A2BA874EB00041796 /* CountryDetail */,
-				E45F58292BA874D700041796 /* CountryList */,
+				E45F58292BA874D700041796 /* Root */,
 				E45F582B2BA8752400041796 /* Extensions */,
 				E45F58272BA8749300041796 /* Resources */,
 			);
@@ -173,12 +173,12 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
-		E45F58292BA874D700041796 /* CountryList */ = {
+		E45F58292BA874D700041796 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				E45F583C2BA897E200041796 /* CountryListViewModel.swift */,
+				E45F583C2BA897E200041796 /* RootViewModel.swift */,
 			);
-			path = CountryList;
+			path = Root;
 			sourceTree = "<group>";
 		};
 		E45F582A2BA874EB00041796 /* CountryDetail */ = {
@@ -375,7 +375,7 @@
 				E45F58392BA8822200041796 /* CountryError.swift in Sources */,
 				E45F57FF2BA86E5500041796 /* ContentView.swift in Sources */,
 				E45F58372BA8811300041796 /* CountryDataSource.swift in Sources */,
-				E45F583D2BA897E200041796 /* CountryListViewModel.swift in Sources */,
+				E45F583D2BA897E200041796 /* RootViewModel.swift in Sources */,
 				E45F57FD2BA86E5500041796 /* ElectroluxTestAssignmentApp.swift in Sources */,
 				E45F58342BA87CE000041796 /* CountryItem.swift in Sources */,
 			);
@@ -386,7 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45F583B2BA8850100041796 /* CountriesDataSourceTests.swift in Sources */,
-				E45F583F2BA89A2700041796 /* CountryListViewModelTests.swift in Sources */,
+				E45F583F2BA89A2700041796 /* RootViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
